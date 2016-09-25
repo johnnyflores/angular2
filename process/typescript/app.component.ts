@@ -7,20 +7,10 @@ import {Component} from 'angular2/core';
 })
 
 export class AppComponent {
-    name: String;
-    artists: any;
-
-    constructor() {
-     this.name= 'Bob';
-     this.artists = [
-        {
-            name: 'Johnny Flores',
-            school: 'Harvard'
-        },
-        {
-            name: 'Adriana Sandoval',
-            school: 'Bogota School'
-        }
-     ]
+    name= 'John';
+    artists = [ 'Johnny Flores', 'Adriana Sandoval'];
+    onClick(e) {
+        this.name=e.target.innerHTML;
+       console.log(e.target.innerHTML);
     }
 }
