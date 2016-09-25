@@ -1,7 +1,12 @@
 <div class="artistsearch">
     <div class="car search">
         <h1>Artist Directory</h1>
-        <span *ngIf="name">name: {{name}}</span>
+        <label *ngIf="name">name: {{name}}</label>
+        <input #newArtist
+            (keyup.enter)="addArtist(newArtist.value); newArtist.value=''"
+            (blur)="addArtist(newArtist.value); newArtist.value=''"
+        >
+        <button (click)="addArtist(newArtist.value); newArtist.value=''">Add</button>
     </div>
 </div>
 <ul class="artistlist cf">
