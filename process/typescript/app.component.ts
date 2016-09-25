@@ -9,8 +9,7 @@ import {Component} from 'angular2/core';
 export class AppComponent {
     name= 'John';
     artists = [ 'Johnny Flores', 'Adriana Sandoval'];
-    onClick(e) {
-        this.name=e.target.innerHTML;
-       console.log(e.target.innerHTML);
+    onClick(myName) {
+        this.name=myName;
     }
 }
