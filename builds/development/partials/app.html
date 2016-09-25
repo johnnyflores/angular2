@@ -10,7 +10,7 @@
     </div>
 </div>
 <ul class="artistlist cf">
-    <li (click)="onClick(item)" *ngFor="#item of artists">
+    <li #artistContainer (click)="onClick(item, artistContainer)" *ngFor="#item of artists">
         <h2>{{item}}</h2>
     </li>
 </ul>

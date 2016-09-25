@@ -9,8 +9,9 @@ import {Component} from 'angular2/core';
 export class AppComponent {
     name= 'John';
     artists = [ 'Johnny Flores', 'Adriana Sandoval'];
-    onClick(myName) {
+    onClick(myName, myElement) {
         this.name=myName;
+        (myElement).style.backgroundColor="#FECE4E";
     }
     addArtist(myArtist) {
         this.artists.push(myArtist);
