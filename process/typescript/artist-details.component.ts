@@ -6,8 +6,6 @@ import {Artist} from './artist';
     templateUrl: 'partials/artistdetails.html',
     styleUrls: ['css/app-details.css'],
     inputs: ['artist']
-
-
 })
 
 export class ArtistDetailsComponent {}
